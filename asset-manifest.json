@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/9.14_oslsite/static/css/main.fece419a.css",
+    "main.js": "/9.14_oslsite/static/js/main.85f2786e.js",
+    "static/js/453.fe3a2559.chunk.js": "/9.14_oslsite/static/js/453.fe3a2559.chunk.js",
+    "index.html": "/9.14_oslsite/index.html",
+    "main.fece419a.css.map": "/9.14_oslsite/static/css/main.fece419a.css.map",
+    "main.85f2786e.js.map": "/9.14_oslsite/static/js/main.85f2786e.js.map",
+    "453.fe3a2559.chunk.js.map": "/9.14_oslsite/static/js/453.fe3a2559.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fece419a.css",
+    "static/js/main.85f2786e.js"
+  ]
+}
