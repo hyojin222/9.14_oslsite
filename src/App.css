@@ -1,38 +1,204 @@
-.App {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  -ms-overflow-style: none;
+  user-select: none;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: rgb(12, 12, 12);
+
+  font-size: 12pt;
+}
+
+img {
+  -webkit-user-drag: none;
+  /* Safari와 Chrome을 위한 설정 */
+  -khtml-user-drag: none;
+  /* Konqueror를 위한 설정 */
+  -moz-user-drag: none;
+  /* Firefox를 위한 설정 */
+  -o-user-drag: none;
+  /* 구형 Opera를 위한 설정 */
+  user-drag: none;
+  /* 표준 설정 */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 50px;
+  background-color: rgba(12, 12, 12, 0.8);
+  backdrop-filter: blur(8px);
+
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: rgb(151, 151, 151);
   text-align: center;
+
+  z-index: 10;
+
+  /* border: 1px cyan solid; */
+
+  overflow: hidden;
+
+  border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: auto;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex; /* Flexbox 설정 */
+  align-items: center; /* 수직 중앙 정렬 */
+
+  font-size: 10pt;
+  height: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  width: 80px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100%; 
+
+  /* border: 1px red solid; */
+
+  transition: color 0.2s;
+}
+
+li:nth-child(-n+3){
+  border-right: 1px solid rgb(67, 67, 67);
+}
+
+li:hover {
+  cursor: pointer;
+  color: rgb(249, 249, 249);
+}
+
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  padding: 1.5rem 0 2rem 0;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.year {
+  padding: 1rem;
+  background-color: rgb(249, 249, 249);
+  width: 800px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.year h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.content-box {
+  border-top: 1px solid rgb(12, 12, 12);
+  padding-top: 0.5rem;
+
+  word-break: keep-all;
+}
+
+.content-box span {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  /* border: 1px solid red; */
+  margin: 0.5rem 0 1rem 0;
+
+  /* margin: 1rem; */
+}
+
+.image-slide {
+  /* border: 1px solid red; */
+  width: 350px;
+  height: 200px;
+
+  overflow: hidden;
+
+  margin-right: auto;
+}
+
+.image-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  position: relative;
+  padding-bottom: 2rem;
+  flex-direction: column;
+
+  width: 400px;
+  margin-left: auto;
+  margin: 0;
+
+}
+
+.description mark {
+  display: inline;
+  background-color: rgb(219, 219, 219);
+  font-size: 10pt;
+  padding: 0;
+}
+
+.description p {
+  font-size: 10pt;
+  line-height: 1.5em;
+  margin-top: 0.6rem;
+}
+
+.link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0.5rem 0;
 }
