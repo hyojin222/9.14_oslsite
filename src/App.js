@@ -7,14 +7,17 @@ function App() {
 
     <>
       <nav>
-        <a href=''><img src={logo} className='logo'></img></a>
+        <div className='logo'>
+          <a href='https://www.instagram.com/opensource_lab'target='_blank' ><img src={logo}></img></a>
+          <h1>OPEN SOURCE LAB</h1>
+        </div>
 
-          <ul>
-            <li>home</li>
-            <li>info</li>
-            <li>works</li>
-            <li>contact</li>
-          </ul>
+        <ul>
+          <li>home</li>
+          <li>info</li>
+          <li>works</li>
+          <li>contact</li>
+        </ul>
       </nav>
 
       <div className='main'>
