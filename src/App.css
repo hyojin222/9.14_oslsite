@@ -113,7 +113,7 @@ li {
 }
 
 li:nth-child(-n+3) {
-  border-right: 1px solid rgb(67, 67, 67);
+  border-right: 1px solid rgb(126, 126, 126);
 }
 
 li:hover {
